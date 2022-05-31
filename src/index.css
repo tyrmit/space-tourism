@@ -34,3 +34,24 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
+
+h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 80px;
+    margin-block: auto;
+}
+
+h6 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    margin-block: auto;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 150px;
+    }
+    h6 {
+        font-size: 32px;
+    }
+}
