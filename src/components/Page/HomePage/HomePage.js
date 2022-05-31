@@ -1,5 +1,7 @@
+import './HomePage.css';
+
 function HomePage(props) {
-    return <div>Home Page rendered</div>;
+    return <div className="home__page">Home Page rendered</div>;
 }
 
 export default HomePage;
