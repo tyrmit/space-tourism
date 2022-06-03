@@ -56,9 +56,23 @@
 @media (min-width: 992px) {
     .home-page {
         background-image: url('../../../assets/img/home/background-home-desktop.jpg');
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
     }
     .home-page__explore-btn {
         width: 274px;
         height: 274px;
+    }
+    .home-page__content {
+        display: inline-block;
+        margin: 0 0 131px 12%;
+    }
+    .home-page__explore {
+        display: inline-block;
+        position: static;
+        width: auto;
+        margin: 0 12% 131px 0;
     }
 }
