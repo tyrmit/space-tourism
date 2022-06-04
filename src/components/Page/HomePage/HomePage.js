@@ -3,7 +3,7 @@ import homePageData from '../../../assets/data/home.json';
 
 function HomePage(props) {
     return (
-        <div className="home-page">
+        <div className="page home-page">
             <section className="home-page__content">
                 <div className="home-page__pretitle">
                     <h6>{homePageData.preTitle}</h6>
@@ -11,7 +11,7 @@ function HomePage(props) {
                 <div className="home-page__title">
                     <h1>{homePageData.title}</h1>
                 </div>
-                <div className="home-page__bodytext">
+                <div className="body-text">
                     <p>{homePageData.bodyText}</p>
                 </div>
             </section>
