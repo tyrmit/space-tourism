@@ -1,3 +1,4 @@
+/* Putting background image in ::before rule so the opacity can be adusted */
 .crew-page::before {
     content: ' ';
     height: 100%;
@@ -16,4 +17,19 @@
 
 .crew-page__page-number {
     opacity: 25%;
+}
+
+.crew-page__pretitle {
+    padding: 88px 0 32px;
+}
+
+.carousel__content {
+    height: 223px;
+    width: 87%;
+    margin: auto;
+    border-bottom: solid 1px #383b4b;
+}
+
+.crew-page__img {
+    height: 100%;
 }

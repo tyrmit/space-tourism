@@ -1,7 +1,12 @@
+import { useState } from 'react';
+
 import './CrewPage.css';
 import crewPageData from '../../../assets/data/crew.json';
+// import crewImg from '../../../assets/img/crew/image-douglas-hurley.webp';
 
 function CrewPage(props) {
+    const [crewIndex, setCrewIndex] = useState(0);
+
     return (
         <div className="page crew-page">
             <section className="crew-page__content">
@@ -12,6 +17,15 @@ function CrewPage(props) {
                         </span>{' '}
                         {crewPageData.preTitle}
                     </h6>
+                </div>
+                <div className="carousel">
+                    <div className="carousel__content">
+                        <img
+                            className="crew-page__img"
+                            src={crewPageData.crewMembers[crewIndex].imgUrl}
+                            alt=""
+                        />
+                    </div>
                 </div>
             </section>
         </div>
