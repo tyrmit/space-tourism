@@ -1,7 +1,19 @@
-.crew-page {
-    width: 100%;
+.crew-page::before {
+    content: ' ';
     height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.25;
     background-size: cover;
-    text-align: center;
     background-image: url('../../../assets/img/crew/background-crew-mobile.jpg');
+}
+
+.crew-page {
+    position: relative;
+}
+
+.crew-page__page-number {
+    opacity: 25%;
 }
