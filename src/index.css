@@ -46,6 +46,8 @@ h6 {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 16px;
     margin-block: auto;
+    letter-spacing: 2.7px;
+    resize: horizontal;
 }
 
 @media (min-width: 768px) {
