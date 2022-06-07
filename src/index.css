@@ -36,10 +36,19 @@ code {
         monospace;
 }
 
-h1 {
+h1,
+h2 {
     font-family: 'Bellefair', serif;
-    font-size: 80px;
     margin-block: auto;
+    margin-block: auto;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 56px;
 }
 
 h6 {

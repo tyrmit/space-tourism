@@ -1,0 +1,43 @@
+/* Putting background image in ::before rule so the opacity can be adusted */
+.destination-page::before {
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.25;
+    background-size: cover;
+    background-image: url('../../../assets/img/destination/background-destination-mobile.jpg');
+}
+
+.destination-page {
+    position: relative;
+}
+
+.destination-page__content {
+    position: relative;
+    z-index: 1;
+}
+
+.destination-page__page-number {
+    opacity: 25%;
+}
+
+.destination-page__pretitle {
+    padding: 88px 0 32px;
+}
+
+.destination-page__img {
+    height: 170px;
+}
+
+.destination-page__nav ul {
+    margin-block: auto;
+    padding-inline: unset;
+}
+
+.destination-page__nav-item {
+    display: inline-block;
+    margin: 10px 5px;
+}
