@@ -9,6 +9,7 @@
     --base-color: #0b0d17;
     --primary-color: #d0d6f9;
     --secondary-color: #ffffff;
+    --dark-color: #383b4b;
 }
 
 * {
@@ -82,4 +83,10 @@ h6 {
     padding: 0 25px;
     max-width: 444px;
     line-height: 1.5;
+}
+
+.separator {
+    width: 87%;
+    border: solid 1px var(--dark-color);
+    margin: 32px auto;
 }

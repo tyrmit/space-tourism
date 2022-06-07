@@ -32,6 +32,10 @@
     height: 170px;
 }
 
+.destination-page__nav {
+    margin: 26px 0 32px;
+}
+
 .destination-page__nav ul {
     margin-block: auto;
     padding-inline: unset;
@@ -40,4 +44,9 @@
 .destination-page__nav-item {
     display: inline-block;
     margin: 10px 5px;
+    padding-bottom: 14px;
+}
+
+.destination-page__nav-item--selected {
+    border-bottom: solid 3px white;
 }

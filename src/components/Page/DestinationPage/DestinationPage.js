@@ -12,15 +12,20 @@ function DestinationPage(props) {
         setDestIndex(id);
     };
 
-    const navElements = destPageData.destinations.map((d) => (
-        <li
-            className="destination-page__nav-item"
-            key={d.id}
-            onClick={(e) => handleNavClick(e, d.id)}
-        >
-            {d.name}
-        </li>
-    ));
+    const navElements = destPageData.destinations.map((d) => {
+        const classes = ['destination-page__nav-item'];
+        if (d.id === destIndex)
+            classes.push('destination-page__nav-item--selected');
+        return (
+            <li
+                className={classes.join(' ')}
+                key={d.id}
+                onClick={(e) => handleNavClick(e, d.id)}
+            >
+                {d.name}
+            </li>
+        );
+    });
 
     return (
         <div className="page destination-page">
@@ -50,6 +55,7 @@ function DestinationPage(props) {
                             <p>{destData.bodyText}</p>
                         </div>
                     </div>
+                    <hr className="separator" />
                     <div className="destination-page__stats"></div>
                 </section>
             </div>
