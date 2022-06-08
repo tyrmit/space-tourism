@@ -60,18 +60,6 @@ h6 {
     resize: horizontal;
 }
 
-@media (min-width: 768px) {
-    body {
-        font-size: 18px;
-    }
-    h1 {
-        font-size: 150px;
-    }
-    h6 {
-        font-size: 32px;
-    }
-}
-
 .page {
     width: 100%;
     min-height: 100vh;
@@ -89,4 +77,16 @@ h6 {
     width: 87%;
     border: solid 1px var(--dark-color);
     margin: 32px auto;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 150px;
+    }
+    h6 {
+        font-size: 32px;
+    }
 }
