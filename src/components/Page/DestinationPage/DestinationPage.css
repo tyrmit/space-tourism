@@ -13,6 +13,7 @@
 
 .destination-page {
     position: relative;
+    height: fit-content;
 }
 
 .destination-page__content {
@@ -58,10 +59,12 @@
     letter-spacing: 2.3px;
     resize: horizontal;
     color: var(--primary-color);
+    text-transform: uppercase;
 }
 
 .destination-page__stat-text {
     font-family: 'Bellefair', serif;
     font-size: 28px;
-    margin: 13px auto 32px;
+    padding: 13px 0 32px;
+    text-transform: uppercase;
 }
