@@ -39,6 +39,7 @@
 .destination-page__nav ul {
     margin-block: auto;
     padding-inline: unset;
+    cursor: pointer;
 }
 
 .destination-page__nav-item {
@@ -48,5 +49,19 @@
 }
 
 .destination-page__nav-item--selected {
-    border-bottom: solid 3px white;
+    border-bottom: solid 3px var(--secondary-color);
+}
+
+.destination-page__stat-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.3px;
+    resize: horizontal;
+    color: var(--primary-color);
+}
+
+.destination-page__stat-text {
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    margin: 13px auto 32px;
 }

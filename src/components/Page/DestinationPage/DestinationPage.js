@@ -13,12 +13,12 @@ function DestinationPage(props) {
     };
 
     const navElements = destPageData.destinations.map((d) => {
-        const classes = ['destination-page__nav-item'];
+        const navClasses = ['destination-page__nav-item'];
         if (d.id === destIndex)
-            classes.push('destination-page__nav-item--selected');
+            navClasses.push('destination-page__nav-item--selected');
         return (
             <li
-                className={classes.join(' ')}
+                className={navClasses.join(' ')}
                 key={d.id}
                 onClick={(e) => handleNavClick(e, d.id)}
             >
@@ -56,7 +56,20 @@ function DestinationPage(props) {
                         </div>
                     </div>
                     <hr className="separator" />
-                    <div className="destination-page__stats"></div>
+                    <div className="destination-page__stats">
+                        <div className="destination-page__stat-title">
+                            AVG. DISTANCE
+                        </div>
+                        <div className="destination-page__stat-text">
+                            {destData.distance}
+                        </div>
+                        <div className="destination-page__stat-title">
+                            EST. TRAVEL TIME
+                        </div>
+                        <div className="destination-page__stat-text">
+                            {destData.travelTime}
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
