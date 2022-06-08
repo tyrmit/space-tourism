@@ -68,3 +68,33 @@
     padding: 13px 0 32px;
     text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+    .destination-page::before {
+        background-image: url('../../../assets/img/destination/background-destination-tablet.jpg');
+    }
+    .destination-page__pretitle {
+        text-align: left;
+        padding-top: 138px;
+        padding: 138px 38px 60px;
+    }
+    .destination-page__img {
+        height: 300px;
+    }
+    .destination-page__nav {
+        margin: 53px 0 32px;
+    }
+    .destination-page__nav-item {
+        margin: 10px 20px;
+    }
+    .destination-page__stat {
+        display: inline-block;
+        margin: auto 90px;
+    }
+}
+
+@media (min-width: 992px) {
+    .destination-page::before {
+        background-image: url('../../../assets/img/destination/background-destination-desktop.jpg');
+    }
+}

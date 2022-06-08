@@ -57,17 +57,21 @@ function DestinationPage(props) {
                     </div>
                     <hr className="separator" />
                     <div className="destination-page__stats">
-                        <div className="destination-page__stat-title">
-                            AVG. DISTANCE
+                        <div className="destination-page__stat">
+                            <div className="destination-page__stat-title">
+                                AVG. DISTANCE
+                            </div>
+                            <div className="destination-page__stat-text">
+                                {destData.distance}
+                            </div>
                         </div>
-                        <div className="destination-page__stat-text">
-                            {destData.distance}
-                        </div>
-                        <div className="destination-page__stat-title">
-                            EST. TRAVEL TIME
-                        </div>
-                        <div className="destination-page__stat-text">
-                            {destData.travelTime}
+                        <div className="destination-page__stat">
+                            <div className="destination-page__stat-title">
+                                EST. TRAVEL TIME
+                            </div>
+                            <div className="destination-page__stat-text">
+                                {destData.travelTime}
+                            </div>
                         </div>
                     </div>
                 </section>

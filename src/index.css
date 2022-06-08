@@ -10,6 +10,9 @@
     --primary-color: #d0d6f9;
     --secondary-color: #ffffff;
     --dark-color: #383b4b;
+
+    --tablet-min-width: 768px;
+    --desktop-min-width: 992px;
 }
 
 * {
@@ -80,6 +83,27 @@ h6 {
 }
 
 @media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 80px;
+    }
+    h6 {
+        font-size: 20px;
+    }
+    .separator {
+        margin: 50px auto 32px;
+        width: 75%;
+    }
+    .body-text {
+        max-width: none;
+        width: 75%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
     body {
         font-size: 18px;
     }
