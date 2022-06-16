@@ -45,7 +45,7 @@ function DestinationPage(props) {
                         alt=""
                     />
                 </section>
-                <section className="destination-page__content">
+                <section className="destination-page__detail-container">
                     <nav className="destination-page__nav">
                         <ul>{navElements}</ul>
                     </nav>

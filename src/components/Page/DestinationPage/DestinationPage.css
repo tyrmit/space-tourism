@@ -97,4 +97,32 @@
     .destination-page::before {
         background-image: url('../../../assets/img/destination/background-destination-desktop.jpg');
     }
+    .destination-page__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+        margin: auto;
+    }
+    .destination-page__pretitle {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .destination-page__detail-container {
+        text-align: left;
+    }
+    .destination-page__img-container {
+        margin-top: 50px;
+    }
+    .destination-page__img {
+        height: 445px;
+    }
+    .destination-page__nav {
+        margin-top: 0;
+    }
+    .destination-page__stat:first-child {
+        margin-left: 0;
+    }
+    .destination-page__nav-item:first-child {
+        margin-left: 0;
+    }
 }

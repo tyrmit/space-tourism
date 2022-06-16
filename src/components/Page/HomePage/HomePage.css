@@ -58,6 +58,7 @@
         display: inline-block;
         margin: 0 0 200px 12%;
         max-width: 600px;
+        text-align: left;
     }
     .home-page__explore {
         display: inline-block;
