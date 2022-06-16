@@ -5,7 +5,9 @@ import crewPageData from '../../../assets/data/crew.json';
 // import crewImg from '../../../assets/img/crew/image-douglas-hurley.webp';
 
 function CrewPage(props) {
-    const [crewIndex, setCrewIndex] = useState(0);
+    // Temporarily only taking the state and not setState function here to remove the compile warning.
+    // Will come back across it later.
+    const crewIndex = useState(0)[0];
 
     return (
         <div className="page crew-page">

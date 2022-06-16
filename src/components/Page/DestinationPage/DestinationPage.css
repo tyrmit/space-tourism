@@ -1,0 +1,128 @@
+/* Putting background image in ::before rule so the opacity can be adusted */
+.destination-page::before {
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.25;
+    background-size: cover;
+    background-image: url('../../../assets/img/destination/background-destination-mobile.jpg');
+}
+
+.destination-page {
+    position: relative;
+    height: fit-content;
+}
+
+.destination-page__content {
+    position: relative;
+    z-index: 1;
+}
+
+.destination-page__page-number {
+    opacity: 25%;
+}
+
+.destination-page__pretitle {
+    padding: 88px 0 32px;
+}
+
+.destination-page__img {
+    height: 170px;
+}
+
+.destination-page__nav {
+    margin: 26px 0 32px;
+}
+
+.destination-page__nav ul {
+    margin-block: auto;
+    padding-inline: unset;
+    cursor: pointer;
+}
+
+.destination-page__nav-item {
+    display: inline-block;
+    margin: 10px 5px;
+    padding-bottom: 14px;
+}
+
+.destination-page__nav-item--selected {
+    border-bottom: solid 3px var(--secondary-color);
+}
+
+.destination-page__stat-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.3px;
+    resize: horizontal;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.destination-page__stat-text {
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    padding: 13px 0 32px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .destination-page::before {
+        background-image: url('../../../assets/img/destination/background-destination-tablet.jpg');
+    }
+    .destination-page__pretitle {
+        text-align: left;
+        padding-top: 138px;
+        padding: 138px 38px 60px;
+    }
+    .destination-page__img {
+        height: 300px;
+    }
+    .destination-page__nav {
+        margin: 53px 0 32px;
+    }
+    .destination-page__nav-item {
+        margin: 10px 20px;
+    }
+    .destination-page__stat {
+        display: inline-block;
+        margin: auto 90px;
+    }
+}
+
+@media (min-width: 992px) {
+    .destination-page::before {
+        background-image: url('../../../assets/img/destination/background-destination-desktop.jpg');
+    }
+    .destination-page__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+        margin: auto;
+    }
+    .destination-page__pretitle {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .destination-page__detail-container {
+        text-align: left;
+    }
+    .destination-page__img-container {
+        margin-top: 50px;
+    }
+    .destination-page__img {
+        height: 445px;
+    }
+    .destination-page__nav {
+        margin-top: 0;
+    }
+    .destination-page__stat:first-child {
+        margin-left: 0;
+    }
+    .destination-page__nav-item:first-child {
+        margin-left: 0;
+    }
+}
