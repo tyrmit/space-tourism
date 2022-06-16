@@ -113,4 +113,7 @@ h6 {
     h6 {
         font-size: 32px;
     }
+    .body-text {
+        font-size: 18px;
+    }
 }

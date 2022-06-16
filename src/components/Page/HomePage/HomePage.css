@@ -56,12 +56,13 @@
     }
     .home-page__content {
         display: inline-block;
-        margin: 0 0 131px 12%;
+        margin: 0 0 200px 12%;
+        max-width: 600px;
     }
     .home-page__explore {
         display: inline-block;
         position: static;
         width: auto;
-        margin: 0 12% 131px 0;
+        margin: 0 12% 200px 0;
     }
 }
